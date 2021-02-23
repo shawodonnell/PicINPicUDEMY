@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    /* FLEX on parent to make child element FLEX ITEMS */
+    display: flex;
+    /* JUSTIFY CONTENT Centre - moves on HOR axis to centre */
+    justify-content: center;
+    /* ALIGN ITEMS Centre = moves items VER axis to centre */
+    align-items: center;
+    background-color: rgba(41, 32, 32, 0.822);
+
+}
+/* button container */
+
+.button-container{
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: inset 0 20px 4px -19px rgba(223, 209, 209, 0.7);
+}
+
+#button{
+    padding: 15px;
+    cursor: pointer;
+    /* OUTLINE NONE takes away to default border after click issue */
+    outline: none;
+    height: 75px;
+    width: 120px;
+    /* TO CHANGE BUTTON FONT needs declared in Button itself  */
+    font-family: Noto Sans JP, sans-serif;
+    font-weight: 900;
+    font-size: larger;
+    letter-spacing: 3px;
+    color: bisque;
+    text-shadow: 0 2px 5px black;
+    background: linear-gradient(to top, grey, rgba(223, 209, 209, 0.274));
+    /* border */
+    border: 2px solid black;
+    border-radius: 7px;
+    box-shadow: inset 0 20px 4px -19px rgba(223, 209, 209, 0.7), 0 12px 12px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+#button:hover{
+    background: linear-gradient(to bottom, grey, rgba(223, 209, 209, 0.274));
+
+}
+
+#button:active{
+    transform: translateY(3px);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
+}
